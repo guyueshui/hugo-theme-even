@@ -33,14 +33,14 @@
 {{ with .Site.Params.googleVerification }}<meta name="google-site-verification" content="{{.}}" />{{ end }}
 
 <!-- Site Generator -->
-<meta name="generator" content="Hugo {{ .Site.Hugo.Version }} with even 4.0.0" />
+<meta name="generator" content="Hugo {{ .Site.Hugo.Version }} with theme even" />
 
 <!-- Permalink & RSSlink -->
 <link rel="canonical" href="{{ .Permalink }}" />
-{{ with .OutputFormats.Get "RSS" }}
-  <link href="{{ .RelPermalink }}" rel="alternate" type="application/rss+xml" title="{{ $.Site.Title }}" />
-  <link href="{{ .RelPermalink }}" rel="feed" type="application/rss+xml" title="{{ $.Site.Title }}" />
-{{ end }}
+{{- with .OutputFormats.Get "RSS" }}
+  <link href="{{ .Permalink }}" rel="alternate" type="application/rss+xml" title="{{ $.Site.Title }}" />
+  <link href="{{ .Permalink }}" rel="feed" type="application/rss+xml" title="{{ $.Site.Title }}" />
+{{- end -}}
 
 <!-- Favicon and Touch icons -->
 <link rel="apple-touch-icon" sizes="180x180" href="{{ "apple-touch-icon.png" | relURL }}">
@@ -74,6 +74,9 @@
 {{ range .Site.Params.customCSS -}}
 <link rel="stylesheet" href="{{ "/css/" | relURL }}{{ . }}">
 {{ end }}
+
+<link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Noto+Serif+SC">
 
 {{/* NOTE: These Hugo Internal Templates can be found starting at https://github.com/spf13/hugo/blob/master/tpl/tplimpl/template_embedded.go#L158 */}}
 {{- template "_internal/opengraph.html" . -}}

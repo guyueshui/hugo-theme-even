@@ -14,7 +14,7 @@ $theme-color-map: (
   'Cobalt Blue': #0047AB #f0f2f5,
   'Hot Pink': #FF69B4 #f8f5f5,
   'Dark Violet': #9932CC #f5f4fa,
-  'Ink': #cc4400 #f8f5ec
+  'Ink': #b22222 #f8f5ec
 );
 
 // Check theme color config.
@@ -37,11 +37,24 @@ $white: #fefefe !default;
 $light-gray: #e6e6e6 !default;
 $gray: #cacaca !default;
 $dark-gray: #8a8a8a !default;
+$hebai: #FFFFFF !default; // 河白色 
+$xinhuang: #FAF9DE !default; // 杏仁黄 
+$yehe: #FFF2E2 !default; // 秋叶褐 
+$yanhong: #FDE6E0 !default; // 胭脂红 
+$qinglv: #E3EDCD !default; // 青草绿 
+$tianlan: #DCE2F1 !default; // 海天蓝 
+$jilaozi: #E9EBFE !default; // 葛巾紫 
+$guanghui: #EAEAEF !default; // 极光灰 
+$rpink: #b22222 !default; // 姨妈红
+$color-accent: #b22222;
+$dark-accent: darken($color-accent, 5%);
+$deep-dark-accent: darken($color-accent, 50%);
 
 
 // ========== Global ========== //
 // Text color of the body.
-$global-font-color: #34495e !default;
+// $global-font-color: #34495e !default;
+$global-font-color: #000000 !default;
 
 // Font size attribute applied to '<html>' and '<body>'.
 $global-font-size: 16px !default;
@@ -56,7 +69,7 @@ $global-container-padding: 0 20px !default;
 $global-lineheight: 1.5 !default;
 
 // Font family of the site.
-$global-font-family: Linux Libertine O, 'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif !default;
+$global-font-family: 'Linux Libertine O', 'Noto Serif SC', 'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif !default;
 
 // Serif font family of the site.
 $global-serif-font-family: Linux Biolinum O, Athelas, STHeiti, Microsoft Yahei, serif !default;
@@ -178,10 +191,10 @@ $content-headings-anchor: "" !default;
 $content-link-border: 1px solid $theme-color !default;
 
 // Background color of the blockquote.
-$content-blockquote-backgroud: rgba($theme-color, 0.05) !default;
+$content-blockquote-backgroud: rgba($color-accent, 0.05) !default;
 
 // Border left of the blockquote.
-$content-blockquote-border-left: 3px solid rgba($theme-color, 0.3) !default;
+$content-blockquote-border-left: 3px solid rgba($color-accent, 0.7) !default;
 
 // Border color of the table.
 $content-table-border-color: darken($deputy-color, 3%) !default;

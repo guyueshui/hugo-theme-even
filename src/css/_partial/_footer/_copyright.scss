@@ -11,6 +11,9 @@
   .hexo-link,
   .theme-link {
     color: $theme-color;
+    &:hover {
+      color: $global-font-color;
+    }
   }
 
   .copyright-year {

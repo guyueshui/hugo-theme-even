@@ -12,3 +12,23 @@
   font-family: Linux Biolinum O;
   src: url("/fonts/Libertine/LinBiolinum_R.otf");
 }
+
+
+figure {
+  // float: right;
+  display: inline-block;
+  /* make img centerd @yychi */
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+  padding: 0.6em 0;
+  position: relative;
+  // border: thin silver solid;
+}
+
+figcaption {
+  // background-color: #222;
+  color: gray;
+  padding: 3px;
+  text-align: center;
+}
