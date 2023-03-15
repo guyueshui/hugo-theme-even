@@ -5,7 +5,7 @@
 
 @font-face {
   font-family: Linux Libertine O;
-  src: url("/fonts/Libertine/LinLibertine_DR.otf");
+  src: url("/fonts/Libertine/LinLibertine_R.otf");
 }
 
 @font-face {
@@ -32,3 +32,16 @@ figcaption {
   padding: 3px;
   text-align: center;
 }
+
+// footnote link
+// a[href^="#fn:"],
+// Back to footnote link
+// a[href^="#fnref:"] {
+//   text-decoration: none;
+//   // color: $orange;
+//   font-family: monospace;
+// }
+// make footnote indicator looks like [x],
+// see: https://discourse.gohugo.io/t/footnote-styling/114/7
+a[href^="#fn:"]:before{ content: '[' }
+a[href^="#fn:"]:after{ content: ']' }
