@@ -69,7 +69,11 @@ $global-container-padding: 0 20px !default;
 $global-lineheight: 1.5 !default;
 
 // Font family of the site.
-$global-font-family: 'Linux Libertine O', 'Noto Serif SC', 'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif !default;
+// $global-font-family: 'Linux Libertine O', 'Noto Serif SC', 'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif !default;
+// see: https://slides.yihui.org/css/chinese.css & https://blog.yfei.page/cn/2020/12/siyuansongti/
+$global-font-family: 'Linux Libertine O', 'source-han-serif-sc', 'Source Han Serif SC',
+  'Source Han Serif CN', 'Source Han Serif TC', 'Source Han Serif TW', 'Source Han Serif',
+  'Noto Serif SC', 'Songti SC', 'Microsoft YaHei', serif;
 
 // Serif font family of the site.
 $global-serif-font-family: Linux Biolinum O, Athelas, STHeiti, Microsoft Yahei, serif !default;

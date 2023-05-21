@@ -2,6 +2,7 @@
 // Custom style
 // ==============================
 // You can override the variables in _variables.scss to customize the style
+// @import "../variables";
 
 @font-face {
   font-family: Linux Libertine O;
@@ -13,6 +14,9 @@
   src: url("/fonts/Libertine/LinBiolinum_R.otf");
 }
 
+blockquote {
+  font-family: 'Linux Libertine O', 'STKaiti', 'KaiTi', '楷体', 'SimKai', 'DFKai-SB', 'NSimSun', serif;
+}
 
 figure {
   // float: right;
