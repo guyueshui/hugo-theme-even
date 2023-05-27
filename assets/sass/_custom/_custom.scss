@@ -2,7 +2,7 @@
 // Custom style
 // ==============================
 // You can override the variables in _variables.scss to customize the style
-// @import "../variables";
+@import "../variables";
 
 @font-face {
   font-family: Linux Libertine O;
@@ -52,3 +52,7 @@ figcaption {
 // see: https://discourse.gohugo.io/t/footnote-styling/114/7
 a[href^="#fn:"]:before{ content: '[' }
 a[href^="#fn:"]:after{ content: ']' }
+a > code {
+  color: $color-accent;
+  text-decoration: none;
+}

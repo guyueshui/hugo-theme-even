@@ -73,10 +73,12 @@ $global-lineheight: 1.5 !default;
 // see: https://slides.yihui.org/css/chinese.css & https://blog.yfei.page/cn/2020/12/siyuansongti/
 $global-font-family: 'Linux Libertine O', 'source-han-serif-sc', 'Source Han Serif SC',
   'Source Han Serif CN', 'Source Han Serif TC', 'Source Han Serif TW', 'Source Han Serif',
-  'Noto Serif SC', 'Songti SC', 'Microsoft YaHei', serif;
+  'Noto Serif SC', 'Songti SC', 'Noto Serif SC', 'Microsoft YaHei', serif;
 
 // Serif font family of the site.
-$global-serif-font-family: Linux Biolinum O, Athelas, STHeiti, Microsoft Yahei, serif !default;
+$global-serif-font-family: Linux Biolinum O, 'source-han-sans-sc', 'Source Han Sans SC',
+  'Source Han Sans CN', 'Source Han Sans TC', 'Source Han Sans TW', 'Source Han Sans',
+  Athelas, STHeiti, Noto Sans SC, Microsoft Yahei, serif !default;
 
 // Background color of the site.
 $global-background: $white !default;
@@ -139,7 +141,7 @@ $post-padding: 1.5em 0 !default;
 $post-border: 1px solid $light-gray !default;
 
 // Font size of post title.
-$post-title-font-size: 27px !default;
+$post-title-font-size: x-large !default;
 
 // Font weight of post title.
 $post-title-font-weight: 400 !default;
