@@ -135,4 +135,23 @@
     <noscript>Please enable JavaScript to view the <a href="https://github.com/utterance">comments powered by utterances.</a></noscript>
   {{- end }}
 
+  {{- if .Site.Params.giscus.enable -}}
+    <script src="https://giscus.app/client.js"
+        data-repo="guyueshui/guyueshui.github.io"
+        data-repo-id="MDEwOlJlcG9zaXRvcnkxNDI4MTY5NTE="
+        data-category="Ideas"
+        data-category-id="DIC_kwDOCIM2t84CW4nN"
+        data-mapping="title"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="bottom"
+        data-theme="preferred_color_scheme"
+        data-lang="zh-CN"
+        data-loading="lazy"
+        crossorigin="anonymous"
+        async>
+    </script>
+  {{- end }}
+
 {{- end }}
