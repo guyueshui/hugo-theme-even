@@ -80,6 +80,23 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&family=Noto+Serif+SC:wght@400;500;700&display=swap" rel="stylesheet">
 
+<!-- see https://github.com/vinta/pangu.js -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/pangu@4.0.7/dist/browser/pangu.min.js"></script>
+<script>
+  const text = pangu.spacing("當你凝視著bug，bug也凝視著你");
+  // text = '當你凝視著 bug，bug 也凝視著你'
+
+  pangu.spacingElementById('main');
+  pangu.spacingElementByClassName('comment');
+  pangu.spacingElementByTagName('p');
+
+  document.addEventListener('DOMContentLoaded', () => {
+    // listen to any DOM change and automatically perform spacing via MutationObserver()
+    pangu.autoSpacingPage();
+  });
+</script> -->
+
+
 {{/* NOTE: These Hugo Internal Templates can be found starting at https://github.com/spf13/hugo/blob/master/tpl/tplimpl/template_embedded.go#L158 */}}
 {{- template "_internal/opengraph.html" . -}}
 {{- template "_internal/schema.html" . -}}
