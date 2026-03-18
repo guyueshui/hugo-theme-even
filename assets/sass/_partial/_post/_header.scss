@@ -28,6 +28,8 @@
 
         &::before {
           content: '·';
+          margin-left: 5px;
+          margin-right: 5px;
         }
 
         &:hover {
@@ -39,6 +41,8 @@
     .more-meta {
       &::before {
         content: '·';
+        margin-left: 5px;
+        margin-right: 5px;
       }
     }
 
